@@ -10,7 +10,7 @@ def get_files(file_dir, labelfile):
     image_list = []
     label_list = []
     len_file = len(os.listdir(file_dir))                        #统计知道哪个文件夹中图像文件的个数。
-    len_label = len(open(labelfile, "r").readlines())           #统计labelfile文件有多少行。如果两者不相等，说明
+    len_label = len(open(labelfffile, "r").readlines())           #统计labelfile文件有多少行。如果两者不相等，说明
     if len_file == len_label:                                   #labelfile文件有误。
         print('num of image indentify to num of labels')
         print('the len of file is%d.' % len_file)
